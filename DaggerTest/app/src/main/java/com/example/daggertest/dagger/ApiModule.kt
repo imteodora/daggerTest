@@ -29,7 +29,7 @@ object ApiModule {
 
     @Provides @JvmStatic
     fun provideDaggerTestService(okHttpClient: OkHttpClient, gson: Gson) = Retrofit.Builder()
-        .baseUrl("https://auxologie.ro/auxologie/api/")
+        .baseUrl("https://test.ro/")
         .addConverterFactory(GsonConverterFactory.create(gson))
         .client(okHttpClient)
         .build()
